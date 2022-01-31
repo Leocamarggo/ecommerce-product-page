@@ -154,5 +154,42 @@ body {
     display: flex;
   }
 }
+.product .bannerItems {
+  display: none;
+}
+
+@media (max-width: 1199px) {
+  .product .bannerItems {
+    display: block;
+  }
+  .product .bannerItems .slick-prev {
+    margin-left: 40px;
+    z-index: 1;
+    background-color: #fff !important;
+    padding: 15px !important;
+    width: 45px !important;
+    height: 45px !important;
+    border-radius: 100%;
+    text-align: center;
+  }
+  .product .bannerItems .slick-prev::before {
+    display: none;
+  }
+  .product .bannerItems .slick-next {
+    margin-right: 40px;
+    background-color: #fff !important;
+    padding: 15px !important;
+    width: 45px !important;
+    height: 45px !important;
+    border-radius: 100%;
+    text-align: center;
+  }
+  .product .bannerItems .slick-next::before {
+    display: none;
+  }
+  .product .bannerItems .iconSlide {
+    width: 10px;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

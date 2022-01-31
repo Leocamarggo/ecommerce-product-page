@@ -1,0 +1,33 @@
+.product
+    .bannerItems
+        display: none
+
+@media (max-width: 1199px)
+    .product
+        .bannerItems
+            display: block
+            .slick-prev 
+                margin-left: 40px
+                z-index: 1
+                background-color: #fff !important
+                padding: 15px !important
+                width: 45px !important
+                height: 45px !important
+                border-radius: 100%
+                text-align: center
+
+                &::before
+                    display: none
+
+            .slick-next 
+                margin-right: 40px
+                background-color: #fff !important
+                padding: 15px !important
+                width: 45px !important
+                height: 45px !important
+                border-radius: 100%
+                text-align: center
+                &::before
+                    display: none
+            .iconSlide
+                width: 10px
