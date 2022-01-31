@@ -1,3 +1,158 @@
+body {
+  margin: 0;
+  font-family: "Kumbh Sans", sans-serif !important;
+}
 
+.headerDesktop {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.headerDesktop ul {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  list-style: none;
+  overflow: hidden;
+  align-items: center;
+  padding: 0;
+}
+.headerDesktop ul li {
+  padding: 15px;
+}
+.headerDesktop ul li a {
+  text-decoration: none;
+  color: #a1a1a2;
+  font-size: 13px;
+}
+.headerDesktop .part01Menu {
+  padding-left: 50px;
+}
+.headerDesktop .part01Menu .logoSK {
+  margin-right: 30px;
+}
+.headerDesktop .part01Menu .logoSK a {
+  display: block;
+  padding: 0;
+  text-decoration: none;
+  color: black;
+  letter-spacing: -1px;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: lowercase;
+}
+.headerDesktop .part01Menu .part03Menu li {
+  padding: 0;
+}
+.headerDesktop .part02Menu {
+  padding-left: 50px;
+}
+.headerDesktop .part02Menu li {
+  padding: 0px;
+  width: 100%;
+  border-bottom: 2px solid #f2f2f2;
+}
+
+.headerMobile {
+  width: 100%;
+  z-index: 3;
+  display: none;
+  background: #fff;
+}
+.headerMobile ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.headerMobile li a {
+  display: block;
+  padding: 20px 10px;
+  text-decoration: none;
+}
+.headerMobile .part01Menu .logoSK {
+  padding-top: 6px;
+}
+.headerMobile .part01Menu .logoSK a {
+  display: block;
+  padding: 0;
+  text-decoration: none;
+  color: black;
+  letter-spacing: -1px;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: lowercase;
+}
+.headerMobile .part02Menu {
+  display: none;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+.headerMobile .menu-icon {
+  cursor: pointer;
+  float: left;
+  padding: 31px 15px 31px 30px;
+  position: relative;
+  user-select: none;
+}
+.headerMobile .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 15px;
+}
+.headerMobile .menu-icon .navicon:before {
+  top: 6px;
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+.headerMobile .menu-icon .navicon:after {
+  top: -6px;
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+.headerMobile .menu-btn {
+  display: none;
+}
+.headerMobile .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+.headerMobile .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+.headerMobile .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+.headerMobile .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+.headerMobile .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before {
+  top: 0;
+}
+.headerMobile .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+@media (max-width: 1199px) {
+  .headerDesktop {
+    display: none;
+  }
+
+  .headerMobile {
+    display: flex;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
