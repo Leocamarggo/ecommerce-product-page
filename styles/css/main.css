@@ -37,10 +37,6 @@ body {
   padding: 0;
   text-decoration: none;
   color: black;
-  letter-spacing: -1px;
-  font-size: 30px;
-  font-weight: 700;
-  text-transform: lowercase;
 }
 .headerDesktop .part01Menu .part03Menu li {
   padding: 0;
@@ -71,7 +67,7 @@ body {
   text-decoration: none;
 }
 .headerMobile .part01Menu .logoSK {
-  padding-top: 6px;
+  padding-top: 4px;
 }
 .headerMobile .part01Menu .logoSK a {
   display: block;
@@ -158,7 +154,7 @@ body {
   display: none;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 900px) {
   .product .bannerItems {
     display: block;
   }
@@ -190,6 +186,49 @@ body {
   .product .bannerItems .iconSlide {
     width: 10px;
   }
+}
+.divDescription .col-12 .subtitle {
+  color: #e69251;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 900;
+  font-size: 13px;
+  padding: 20px 0 10px 0;
+}
+.divDescription .col-12 .title {
+  padding: 0 0 10px 0;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 1;
+}
+.divDescription .col-12 .text {
+  color: #929397;
+  font-size: 15px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.divDescription .col-12 .allValues {
+  align-items: center;
+}
+.divDescription .col-12 .allValues .valuesDiv {
+  display: flex;
+  align-items: center;
+}
+.divDescription .col-12 .allValues .valuesDiv .productVal {
+  color: black;
+  font-size: 30px !important;
+  font-weight: bolder;
+}
+.divDescription .col-12 .allValues .valuesDiv .discountVal {
+  color: #ef8333;
+  background-color: #fff1de;
+  padding: 0px 8px;
+  border-radius: 5px;
+  margin-left: 18px;
+}
+.divDescription .col-12 .allValues .totalVal {
+  color: #b8b9bf;
+  text-decoration: line-through;
 }
 
 /*# sourceMappingURL=main.css.map */
