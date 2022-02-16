@@ -187,6 +187,9 @@ body {
     width: 10px;
   }
 }
+.divDescription {
+  height: 68vh;
+}
 .divDescription .col-12 .subtitle {
   color: #e69251;
   text-transform: uppercase;
@@ -229,6 +232,46 @@ body {
 .divDescription .col-12 .allValues .totalVal {
   color: #b8b9bf;
   text-decoration: line-through;
+}
+.divDescription .col-12 .quantityDiv {
+  margin-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #f7f8fd;
+  border-radius: 10px;
+}
+.divDescription .col-12 .quantityDiv .col {
+  align-items: center;
+}
+.divDescription .col-12 .quantityDiv .col .removeCart {
+  color: #f3822c;
+  font-size: 25px;
+  margin-top: -5px;
+  font-weight: bold;
+}
+.divDescription .col-12 .quantityDiv .col .quantityCart {
+  font-size: 15px;
+  font-weight: bold;
+}
+.divDescription .col-12 .quantityDiv .col .addCart {
+  color: #f3822c;
+  font-size: 25px;
+  margin-top: -5px;
+  font-weight: bold;
+}
+.divDescription .col-12 .divAddCart {
+  padding-top: 15px;
+}
+.divDescription .col-12 .divAddCart .btnAddCart {
+  color: white;
+  border: none;
+  background-color: #ff7d1b;
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=main.css.map */
