@@ -2,10 +2,41 @@
     .bannerItems
         display: none
 
-@media (max-width: 900px)
+.divProductDesk
+    display: none
+
+@media (min-width: 999px)
+    .divProductDesk
+        
+        display: block
+        .bannerItemDesk
+            max-width: 500px
+            padding-top: 50px
+            z-index: -1
+            
+            img
+                max-width: 500px
+                border-radius: 20px
+        .thumbBanner
+            img
+                border-radius: 10px
+            .slick-current
+                opacity: 0.5
+                border: 1px solid #ff7d1b 
+            .slick-slide
+                cursor: pointer
+    .divDescription
+        padding-top: 100px
+        .col-12
+            .allValues
+                flex-direction: column
+                align-items: start !important
+
+@media (max-width: 999px)
     .product
         .bannerItems
             display: block
+            border: 2px solid #ff7d1b
             .slick-prev 
                 margin-left: 40px
                 z-index: 1
@@ -31,3 +62,10 @@
                     display: none
             .iconSlide
                 width: 10px
+
+@media (max-width: 565px)
+    .product
+        padding: 0 !important
+        margin: 0 !important
+        .bannerItems
+            border: none !important

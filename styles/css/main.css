@@ -26,9 +26,6 @@ body {
   color: #a1a1a2;
   font-size: 13px;
 }
-.headerDesktop .part01Menu {
-  padding-left: 50px;
-}
 .headerDesktop .part01Menu .logoSK {
   margin-right: 30px;
 }
@@ -40,9 +37,6 @@ body {
 }
 .headerDesktop .part01Menu .part03Menu li {
   padding: 0;
-}
-.headerDesktop .part02Menu {
-  padding-left: 50px;
 }
 .headerDesktop .part02Menu li {
   padding: 0px;
@@ -154,9 +148,46 @@ body {
   display: none;
 }
 
-@media (max-width: 900px) {
+.divProductDesk {
+  display: none;
+}
+
+@media (min-width: 999px) {
+  .divProductDesk {
+    display: block;
+  }
+  .divProductDesk .bannerItemDesk {
+    max-width: 500px;
+    padding-top: 50px;
+    z-index: -1;
+  }
+  .divProductDesk .bannerItemDesk img {
+    max-width: 500px;
+    border-radius: 20px;
+  }
+  .divProductDesk .thumbBanner img {
+    border-radius: 10px;
+  }
+  .divProductDesk .thumbBanner .slick-current {
+    opacity: 0.5;
+    border: 1px solid #ff7d1b;
+  }
+  .divProductDesk .thumbBanner .slick-slide {
+    cursor: pointer;
+  }
+
+  .divDescription {
+    padding-top: 100px;
+  }
+  .divDescription .col-12 .allValues {
+    flex-direction: column;
+    align-items: start !important;
+  }
+}
+@media (max-width: 999px) {
   .product .bannerItems {
     display: block;
+    border: 2px solid #ff7d1b;
   }
   .product .bannerItems .slick-prev {
     margin-left: 40px;
@@ -185,6 +216,15 @@ body {
   }
   .product .bannerItems .iconSlide {
     width: 10px;
+  }
+}
+@media (max-width: 565px) {
+  .product {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .product .bannerItems {
+    border: none !important;
   }
 }
 .divDescription {
